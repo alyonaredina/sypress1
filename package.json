@@ -1,0 +1,19 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mac": "e2e:chrome --env mac='{'h':1536,'w':960}'",
+    "machead": "e2e:chrome --headless --env mac='{'h':1536,'w':960}'",
+    "mobile": "e2e:chrome --env mobile='{'h':360,'w':760}'",
+    "mobilehead": "e2e:chrome --headless --env mobile='{'h':360,'w':760}'"
+  },
+  "author": "Redina Alyona",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.16.0"
+  }  
+}
+
