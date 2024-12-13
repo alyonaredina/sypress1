@@ -1,6 +1,4 @@
-Cypress.env() 
-Cypress.env('mac') 
-Cypress.env('mobile')
+
 
 describe('authorization', {defaultCommandTimeout: 90000}, () => {       
     it('successful authorization', () => {

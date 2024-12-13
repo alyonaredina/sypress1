@@ -4,10 +4,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mac": "e2e:chrome --env mac='{'h':1536,'w':960}'",
-    "machead": "e2e:chrome --headless --env mac='{'h':1536,'w':960}'",
-    "mobile": "e2e:chrome --env mobile='{'h':360,'w':760}'",
-    "mobilehead": "e2e:chrome --headless --env mobile='{'h':360,'w':760}'"
+
+    "mac:headed:chrome": "cypress run --headed --browser chrome --config viewportWidth=1536,viewportHeight=960",
+    "mac:headless:chrome": "cypress run --headless --browser chrome --config viewportWidth=1536,viewportHeight=960",
+    "mac:headed:firefox": "cypress run --headed --browser firefox --config viewportWidth=1536,viewportHeight=960",
+    "mac:headless:firefox": "cypress run --headless --browser firefox --config viewportWidth=1536,viewportHeight=960",
+
+
+    "mobile:headed:chrome": "cypress run --headed --browser chrome --config viewportWidth=360,viewportHeight=740",
+    "mobile:headless:chrome": "cypress run --headless --browser chrome --config viewportWidth=360,viewportHeight=740",
+    "mobile:headed:firefox": "cypress run --headed --browser firefox --config viewportWidth=360,viewportHeight=740",
+    "mobile:headless:firefox": "cypress run --headless --browser firefox --config viewportWidth=360,viewportHeight=740"    
   },
   "author": "Redina Alyona",
   "license": "ISC",
